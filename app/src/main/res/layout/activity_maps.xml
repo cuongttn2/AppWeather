@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:text="England"
+        android:id="@+id/edt_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_map_search"
+        android:layout_width="wrap_content"
+        android:onClick="onMapReady"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Search" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.gms.maps.MapView>
+
+</LinearLayout>

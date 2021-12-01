@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".NextDayFragment">
+
+    <LinearLayout
+        android:id="@+id/main_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/nextday"
+            android:textColor="@color/textMainColor"
+            android:textSize="24dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_location_on_24"></ImageView>
+
+            <TextView
+                android:id="@+id/txt_city_name_nd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Weather in "
+                android:textColor="@color/textMainColor"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_geocoord_nd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="32 123 "
+            android:textColor="@color/textMainColor"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_nextdays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
